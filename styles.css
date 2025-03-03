@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* General Styles */
 body {
     background-color: black;
@@ -10,8 +12,8 @@ body {
 /* Header */
 header {
     text-align: center;
+    font-variant: small-caps;
     background: #1a1a1a;
-    padding: 20px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -32,7 +34,8 @@ body::before {
 nav {
     background: #333;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 nav ul {
