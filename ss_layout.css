@@ -50,30 +50,56 @@ div#title h1 {
 
 /* Navigation */
 nav {
-  display: inline-flex;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  background: #333;
+  background-color: #333;
   text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
 nav ul {
   list-style: none;
+  margin: 0 auto;
   padding: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  display: inline-block;        /* Horizontal listing of items */
+  height: 30px;                 /* Fill the nav's height */
+  line-height: 30px;            /* Matches nav's height for vertical centering */
+  vertical-align: middle;       /* Helps ensure inline-block alignment */
+  margin: 0;                    /* Spacing between items */
+  padding: 0 10px;              /* Give each item's text some space */
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+}
+
+nav ul li:hover {
+  color: #000000;
+  text-shadow: #ffffff 0 0 5px;
+  text-decoration: underline;
+}
+
+li.home:hover {
+  background-color: #a4acaf;
+}
+li.seahawks:hover {
+  background-color: #002143;
+}
+li.mariners:hover {
+  background-color: #005a5c;
+}
+li.sounders:hover {
+  background-color: #04ca35;
+}
+li.storm:hover {
+  background-color: #2e5136;
+}
+li.reign:hover {
+  background-color: #005092;
+}
+li.kraken:hover {
+  background-color: #62a0b8;
 }
 
 /* Layout Container */
