@@ -2,6 +2,7 @@
 
 /* General Styles */
 body {
+  min-width: 640px;
   color: white;
   background-color: #a4acaf;
   font-family: Arial, sans-serif;
