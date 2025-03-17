@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Unofficial Seattle Sports - Seahawks</title>
-  <link rel="stylesheet" href="ss_layout.css">
+
+  <link rel="stylesheet" href="seahawks_layout.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 <header>
@@ -24,34 +27,75 @@
 
 <div class="container">
   <aside class="sidebar">
-    <section class="team-links">
-      <h2>Team Links</h2>
-      <ul>
-        <li><a href="#">Official Team Site</a></li>
-        <li><a href="#">Fan Forums</a></li>
-        <li><a href="#">Merchandise</a></li>
-      </ul>
-    </section>
-    <section class="schedule">
-      <h2>Upcoming Schedule</h2>
-      <ul>
-        <li>Game 1 - Date</li>
-        <li>Game 2 - Date</li>
-        <li>Game 3 - Date</li>
-      </ul>
-    </section>
+
+    <div class="sticky-sidebar">
+      <section class="team-links">
+        <h2 style="color:#69BE28;">Team Links</h2>
+        <ul>
+          <li><a href="https://www.seahawks.com/">Official Seahawks Team Site</a></li>
+          <li><a href="https://www.reddit.com/r/Seahawks/">Seahawks Reddit</a></li>
+          <li><a href="https://proshop.seahawks.com/">Seahawks Merchandise</a></li>
+        </ul>
+      </section>
+
+      <section class="schedule">
+        <h2 style="color:#69BE28;">Upcoming Schedule</h2>
+        <ul>
+          <li><b>Home:</b></li>
+          <li>Arizona Cardinals </li>
+          <li>Los Angeles Rams</li>
+          <li>San Francisco 49ers</li>
+          <li>Houston Texans </li>
+          <li>Indianapolis Colts</li>
+          <li>New Orleans Saints</li>
+          <li>Tampa Bay Buccaneers </li>
+          <li>Minnesota Vikings </li>
+          <li>-------------------------</li>
+          <li><b>Away:</b></li> 
+          <li>Arizona Cardinals </li>
+          <li>Los Angeles Rams</li>
+          <li>San Francisco 49ers</li>
+          <li>Atlanta Falcons</li> 
+          <li>Carolina Panthers</li>
+          <li>Jacksonville Jaguars </li>
+          <li>Tennessee Titans</li>
+          <li>Washington Commanders</li>
+          <li>Pittsburgh Steelers</li>
+        </ul>
+      </section>
+    </div>
   </aside>
+
 
   <main>
     <h2>Latest News</h2>
     <article>
-      <h3>Headline 1</h3>
-      <p>News content goes here...</p>
+
+      <h3 style="color:#69BE28;"> Geno Smith Traded to the Las Vegas Raiders!</h3>
+      <p>DK Metcalf has been traded by the Seahawks to the Steelers in exchange for a 2025 3rd Round Draft Pick</p>
+      <p><a href="https://www.nfl.com/news/seahawks-trading-qb-geno-smith-to-raiders-in-exchange-for-2025-third-round-pick">Read More Here</a></p>
     </article>
     <article>
-      <h3>Headline 2</h3>
-      <p>News content goes here...</p>
+      <h3 style="color:#69BE28;">DK Metcalf Traded to the Pittsburgh Steelers!</h3>
+      <p>DK Metcalf has been traded by the Seahawks to the Steelers in exchange for a 2025 2nd Round Draft Pick</p>
+      <p>Both teams are also swapping 2025 sixth and seventh round draft picks</p>
+      <p><a href="https://www.nfl.com/news/seahawks-sending-wr-dk-metcalf-to-steelers-in-exchange-for-2025-second-round-pick">Read More Here</a></p>
     </article>
+    
+    <section class="media-container">
+      <h2>Best Seahawks Defensive Play of 2024</h2>
+      <video controls class="responsive-media">
+        <source src="seahawks_highlights.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2>Best Seahawks Offensive Play of 2024</h2>
+      <video controls class="responsive-media">
+        <source src="seahawks_highlights2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    
+
   </main>
 </div>
 
