@@ -6,70 +6,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Unofficial Home of Seattle Sports</title>
   <link rel="stylesheet" href="ss_layout.css">
+  <link rel="stylesheet" href="ss_theme.css">
 </head>
 
 <body>
-  <header>
-    <img src="seattle_sports_logo.png" alt="Seattle Sports Logo" id="logo">
-  </header>
+<header>
+  <img src="img/seattle_sports_logo.png" alt="Seattle Sports Logo" id="logo">
+</header>
 
-  <div id="title">
-    <h1>The Unofficial Home of Seattle Sports</h1>
-  </div>
+<div id="title">
+  <h1>The Unofficial Home of Seattle Sports</h1>
+</div>
 
-  <nav>
-    <ul>
-      <li class="home"><a href="index.html">Home</a></li>
-      <li class="seahawks"><a href="seahawks.html">Seahawks</a></li>
-      <li class="mariners"><a href="mariners.html">Mariners</a></li>
-      <li class="sounders"><a href="sounders.html">Sounders</a></li>
-      <li class="storm"><a href="storm.html">Storm</a></li>
-      <li class="reign"><a href="reign.html">Reign FC</a></li>
-      <li class="kraken"><a href="kraken.html">Kraken</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul>
+    <li class="home"><a href="index.html">Home</a></li>
+    <li class="seahawks"><a href="seahawks.html">Seahawks</a></li>
+    <li class="mariners"><a href="mariners.html">Mariners</a></li>
+    <li class="kraken"><a href="kraken.html">Kraken</a></li>
+    <li class="sounders"><a href="sounders.html">Sounders</a></li>
+    <li class="storm"><a href="storm.html">Storm</a></li>
+    <li class="reign"><a href="reign.html">Reign FC</a></li>
+  </ul>
+</nav>
 
-  <div class="container">
-    <aside class="sidebar">
-      <section class="team-links">
-        <h2>Team Links</h2>
-        <ul>
-          <li><a href="#">Official Team Site</a></li>
-          <li><a href="#">Fan Forums</a></li>
-          <li><a href="#">Merchandise</a></li>
-        </ul>
-      </section>
-      <section class="schedule">
-        <h2>Upcoming Schedule</h2>
-        <ul>
-          <li>Game 1 - Date</li>
-          <li>Game 2 - Date</li>
-          <li>Game 3 - Date</li>
-        </ul>
-      </section>
-    </aside>
+<div class="container">
+  <aside class="sidebar">
+    <section class="team-links">
+      <h2>Official Team Links</h2>
+      <ul>
+        <li class="seahawks"><a href="https://www.seahawks.com">Seahawks</a></li>
+        <li class="mariners"><a href="https://www.mlb.com/mariners">Mariners</a></li>
+        <li class="kraken"><a href="https://www.nhl.com/kraken/">Kraken</a></li>
+        <li class="sounders"><a href="https://www.soundersfc.com/">Sounders FC</a></li>
+        <li class="storm"><a href="https://storm.wnba.com/">Storm</a></li>
+        <li class="reign"><a href="https://www.reignfc.com/">Reign FC</a></li>
+      </ul>
+    </section>
 
-    <main>
-      <h2>Latest News</h2>
-      <article>
-        <h3>Headline 1</h3>
-        <p>News content goes here...</p>
-      </article>
-      <article>
-        <h3>Headline 2</h3>
-        <p>News content goes here...</p>
-      </article>
-    </main>
-  </div>
+    <section class="schedule">
+      <h2>Next 10 Games</h2>
+      <ul class="upcoming-games">
+        <li class="hockey">
+          <p class="match">SEA @ CHI</p>
+          <strong class="game-time">Mar 18 • 5:30 PM</strong><br>
+          <em class="game-venue">United Center</em>
+        </li>
+        <li class="hockey">
+          <p class="match">SEA @ MIN</p>
+          <strong class="game-time">Mar 19 • 6:30 PM</strong><br>
+          <em class="game-venue">Xcel Energy Center</em>
+        </li>
+        <li class="soccer">
+          <p class="match">REI @ NCC</p>
+          <strong class="game-time">Mar 22 • 4:00 PM</strong><br>
+          <em class="game-venue">WakeMed Soccer Park</em>
+        </li>
+        <li class="hockey">
+          <p class="match">SEA @ EDM</p>
+          <strong class="game-time">Mar 22 • 7:00 PM</strong><br>
+          <em class="game-venue">Rogers Place</em>
+        </li>
+        <li class="soccer">
+          <p class="match">SFC @ HOU</p>
+          <strong class="game-time">Mar 22 • 7:30 PM</strong><br>
+          <em class="game-venue">Lumen Field</em>
+        </li>
+        <li class="hockey">
+          <p class="match">SEA @ CGY</p>
+          <strong class="game-time">Mar 25 • 6:00 PM</strong><br>
+          <em class="game-venue">Scotiabank Saddledome</em>
+        </li>
+        <li class="hockey">
+          <p class="match">EDM @ SEA</p>
+          <strong class="game-time">Mar 27 • 7:00 PM</strong><br>
+          <em class="game-venue">Climate Pledge Arena</em>
+        </li>
+        <li class="baseball">
+          <p class="match">OAK @ SEA</p>
+          <strong class="game-time">Mar 27 • 7:10 PM</strong><br>
+          <em class="game-venue">T-Mobile Park</em>
+        </li>
+        <li class="baseball">
+          <p class="match">OAK @ SEA</p>
+          <strong class="game-time">Mar 28 • 6:40 PM</strong><br>
+          <em class="game-venue">T-Mobile Park</em>
+        </li>
+        <li class="soccer">
+          <p class="match">REI @ ACFC</p>
+          <strong class="game-time">Mar 30 • 5:00 PM</strong><br>
+          <em class="game-venue">BMO Stadium</em>
+        </li>
+      </ul>
+    </section>
+  </aside>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Unofficial Seattle Sports</p>
-    <p>Authors: Joshua Simpson, Errol Melvyn Luna, Fadumo Shire, Mike Pace</p>
-  </footer>
+  <main>
+    <h2>Latest News</h2>
+    <article>
+      <h3>Headline 1</h3>
+      <p>News content goes here...</p>
+    </article>
+    <article>
+      <h3>Headline 2</h3>
+      <p>News content goes here...</p>
+    </article>
+  </main>
+</div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<footer>
+  <p>&copy; <span id="year"></span> Unofficial Seattle Sports</p>
+  <p>Authors: Joshua Simpson, Errol Melvyn Luna, Fadumo Shire, Mike Pace</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

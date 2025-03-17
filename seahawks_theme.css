@@ -1,0 +1,88 @@
+/***********************************
+  Theme (Colors, Fonts, Backgrounds)
+***********************************/
+
+/* 1) Base Colors, Fonts */
+body {
+  background-color: #a4acaf;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* 2) Header / Background Images */
+body > header {
+  /* We keep layout properties in layout.css (width, max-height, etc.) */
+  background-image:
+          url("img/ss_tiled_bg.png"),
+          linear-gradient(180deg, #002144 0%, #42b649 100%);
+  background-repeat: repeat-x, no-repeat;
+  background-position: top left, center;
+  background-size: auto, cover;
+}
+
+/* 3) Title (Color, Font, etc.) */
+div#title h1 {
+  text-align: center; /* could stay in layout, but commonly a style choice */
+  font-variant: small-caps;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #002144;
+  margin: 0;
+  padding: 0;
+}
+
+/* 4) Navigation Colors & Hover Styles */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  color: #000;
+  text-shadow: #fff 0 0 5px;
+  text-decoration: underline;
+}
+/* Team-based hover colors */
+li.home:hover {
+  background-color: #a4acaf;
+}
+li.seahawks:hover {
+  background-color: #002143;
+}
+li.mariners:hover {
+  background-color: #005a5c;
+}
+li.sounders:hover {
+  background-color: #04ca35;
+}
+li.storm:hover {
+  background-color: #2e5136;
+}
+li.reign:hover {
+  background-color: #005092;
+}
+li.kraken:hover {
+  background-color: #62a0b8;
+}
+
+/* 5) Sidebar Theme */
+.sidebar {
+  background: #222;
+}
+.sidebar h2 {
+  border-bottom: 2px solid white;
+}
+.sidebar ul li a {
+  color: lightblue;
+}
+
+/* 6) Main Content Theme */
+main article {
+  background: #444;
+}
+
+/* 7) Footer Colors */
+footer {
+  background: #1a1a1a;
+}
