@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
 /* General Styles */
+
+html {
+  min-width: 640px;
+}
 body {
+  min-width: 640px;
   color: white;
   background-color: #a4acaf;
   font-family: Arial, sans-serif;
