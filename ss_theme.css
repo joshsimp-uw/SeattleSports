@@ -111,6 +111,52 @@ main article {
   background: #444;
 }
 
+main h2 {
+  font-size: 1.8rem;
+  font-style: italic;
+  border-top: 2px solid #002144;
+  border-bottom: 2px solid #002144;
+  background: linear-gradient(90deg, #002144 0%, #42b649 100%);
+}
+
+main h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 4px solid #ffffff; /* Default white, overridden per sport */
+}
+
+/* Team-Specific Borders for h3 */
+.news .football h3,
+.highlights .football h3 { border-bottom-color: #002A5C; } /* Seahawks Blue */
+.news .baseball h3,
+.highlights .baseball h3 { border-bottom-color: #005C5C; } /* Mariners Teal */
+.news .soccer h3,
+.highlights .soccer h3 { border-bottom-color: #2ECC40; } /* Sounders/Reign Green */
+.news .basketball h3,
+.highlights .basketball h3 { border-bottom-color: #2E5136; } /* Storm Green */
+.news .hockey h3,
+.highlights .hockey h3 { border-bottom-color: #001F3F; } /* Kraken Blue */
+
+main p {
+  font-size: 1rem;
+  color: #dddddd;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border effect */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+}
+
+main a{
+  color: #45ae23; /* green for all links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main a:hover,
+main a:active {
+  text-decoration: underline;
+  color: #FFD700; /* Gold highlight on hover/active */
+}
+
 /* 7) Footer Colors */
 footer {
   background: #1a1a1a;
