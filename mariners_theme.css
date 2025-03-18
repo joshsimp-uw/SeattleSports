@@ -1,10 +1,17 @@
 /***********************************
   Theme (Colors, Fonts, Backgrounds)
 ***********************************/
+/* MARINERS COLORS
+Navy Blue:    	    #0C2C56	rgb(12, 44, 86)
+Northwest Green:	  #005C5C	rgb(0, 92, 92)
+Silver (Metallic):	#C4CED4	rgb(196, 206, 212)
+White:            	#FFFFFF	rgb(255, 255, 255)
+
+ */
 
 /* 1) Base Colors, Fonts */
 body {
-  background-color: #a4acaf;
+  background-color: #C4CED4;
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -14,7 +21,7 @@ body > header {
   /* We keep layout properties in layout.css (width, max-height, etc.) */
   background-image:
           url("img/ss_tiled_bg.png"),
-          linear-gradient(180deg, #002144 0%, #42b649 100%);
+          linear-gradient(180deg, #0C2C56 0%, #005C5C 100%);
   background-repeat: repeat-x, no-repeat;
   background-position: top left, center;
   background-size: auto, cover;
@@ -29,7 +36,7 @@ div#title h1 {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  background-color: #002144;
+  background-color: #0C2C56;
   margin: 0;
   padding: 0;
 }
@@ -37,7 +44,7 @@ div#title h1 {
 /* 4) Navigation Colors & Hover Styles */
 nav{
   background-color: #444444FF;
-  border-bottom: 3px solid #002144;
+  border-bottom: 3px solid #0C2C56;
 }
 nav ul li a {
   color: white;
@@ -52,21 +59,12 @@ nav ul li:hover {
 
 /* 5) Sidebar Theme */
 .sidebar {
-  background-color: #002144; /* Sidebar background */
+  background-color: #0C2C56; /* Sidebar background */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .sidebar h2 {
   border-bottom: 2px solid white;
 }
-
-.sidebar h3 {
-  letter-spacing: 5px;
-  font-weight: bold;
-  font-style: italic;
-  background-color: #2ECC40;
-  border-radius: 3px;
-}
-
 .sidebar .team-links li a {
   text-decoration: none;
 }
@@ -78,10 +76,11 @@ nav ul li:hover {
 .sidebar .upcoming-games .match {
   color: white;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 .sidebar .upcoming-games .game-time {
   font-size: 1rem;
-  color: #2ECC40; /* Action Green */
+  color: #f1c40f; /* Yellow */
 }
 
 .sidebar .upcoming-games .game-venue {
@@ -93,24 +92,40 @@ nav ul li:hover {
   color: lightblue;
 }
 
-/*
-.sidebar .upcoming-games .football .match {
-  background-color: #002A5C; */ /* Seahawks Blue */ /*
+/* Team-Specific Background Colors */
+.sidebar .upcoming-games .hockey .match {
+  background-color: #001F3F; /* Kraken Blue */
 }
-*/
+
+.sidebar .upcoming-games .soccer .match {
+  background-color: #2ECC40; /* Sounders/Reign Green */
+}
+
+.sidebar .upcoming-games .baseball .match {
+  background-color: #005C5C; /* Mariners Teal */
+}
+
+.sidebar .upcoming-games .basketball .match {
+  background-color: #2E5136; /* Storm Green */
+}
+
+.sidebar .upcoming-games .football .match {
+  background-color: #002A5C; /* Seahawks Blue */
+}
+
 
 /* 6) Main Content Theme */
 main article {
-  background: #002144;
+  background: #0C2C56;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main h2 {
   font-size: 1.8rem;
   font-style: italic;
-  border-top: 2px solid #002144;
-  border-bottom: 2px solid #002144;
-  background: linear-gradient(90deg, #002144 0%, #A5ACAF 100%);
+  border-top: 2px solid #0C2C56;
+  border-bottom: 2px solid #0C2C56;
+  background: linear-gradient(90deg, #0C2C56 0%, #005C5C 100%);
 }
 
 main h3 {
@@ -122,7 +137,18 @@ main h3 {
 /* Team-Specific Borders for h3 */
 .news .football h3,
 .highlights .football h3 { border-bottom-color: #002A5C; } /* Seahawks Blue */
+.news .baseball h3,
+.highlights .baseball h3 { border-bottom-color: #005C5C; } /* Mariners Teal */
+.news .soccer h3,
+.highlights .soccer h3 { border-bottom-color: #2ECC40; } /* Sounders/Reign Green */
+.news .basketball h3,
+.highlights .basketball h3 { border-bottom-color: #2E5136; } /* Storm Green */
+.news .hockey h3,
+.highlights .hockey h3 { border-bottom-color: #001F3F; } /* Kraken Blue */
 
+main img {
+  border-radius: 5px;
+}
 main p {
   font-size: 1rem;
   color: #dddddd;
@@ -132,19 +158,18 @@ main p {
 }
 
 main a{
+  color: white; /* green for all links */
   text-decoration: none;
-  color: #69BE28; /* Action green highlight on hover/active */
   font-weight: bold;
 }
 
 main a:hover,
 main a:active {
-  color: #A5ACAF; /* green for all links */
   text-decoration: underline;
-
+  color: red; /* Gold highlight on hover/active */
 }
 
 /* 7) Footer Colors */
 footer {
-  background: #002A5C;
+  background: #0C2C56;
 }

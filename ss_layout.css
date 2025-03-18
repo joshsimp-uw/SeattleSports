@@ -123,6 +123,7 @@ main {
 }
 
 main article {
+  overflow: hidden;
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 5px;
@@ -131,6 +132,11 @@ main article {
   animation: fadeIn 0.5s ease forwards; /* If you consider animations more “style,” put in theme.css */
 }
 
+main img {
+  width: 20%;
+  float: right;
+  margin-left: 10px;
+}
 main h2 {
   padding: 10px 10px;
   margin-bottom: 10px;
@@ -143,6 +149,7 @@ main h3 {
 }
 
 main p {
+  overflow: hidden;
   padding: 10px;
 }
 
