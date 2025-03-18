@@ -18,6 +18,7 @@ body > header {
   background-repeat: repeat-x, no-repeat;
   background-position: top left, center;
   background-size: auto, cover;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); /* We’ll move color references to theme.css below */
 }
 
 /* 3) Title (Color, Font, etc.) */
@@ -34,6 +35,10 @@ div#title h1 {
 }
 
 /* 4) Navigation Colors & Hover Styles */
+nav{
+  background-color: #444444FF;
+  border-bottom: 3px solid #002144;
+}
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -42,47 +47,104 @@ nav ul li:hover {
   color: #000;
   text-shadow: #fff 0 0 5px;
   text-decoration: underline;
-}
-/* Team-based hover colors */
-li.home:hover {
   background-color: #a4acaf;
-}
-li.seahawks:hover {
-  background-color: #002143;
-}
-li.mariners:hover {
-  background-color: #005a5c;
-}
-li.sounders:hover {
-  background-color: #04ca35;
-}
-li.storm:hover {
-  background-color: #2e5136;
-}
-li.reign:hover {
-  background-color: #005092;
-}
-li.kraken:hover {
-  background-color: #62a0b8;
 }
 
 /* 5) Sidebar Theme */
 .sidebar {
-  background: #222;
+  background-color: #002144; /* Sidebar background */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .sidebar h2 {
   border-bottom: 2px solid white;
 }
+
+.sidebar h3 {
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #2ECC40;
+  border-radius: 3px;
+}
+
+.sidebar .team-links li a {
+  text-decoration: none;
+}
+
+.sidebar .team-links li a:hover, .team-links li a:active {
+  text-decoration: underline;
+}
+
+.sidebar .upcoming-games .match {
+  color: white;
+  font-size: 1.2rem;
+}
+.sidebar .upcoming-games .game-time {
+  font-size: 1rem;
+  color: #2ECC40; /* Action Green */
+}
+
+.sidebar .upcoming-games .game-venue {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
 .sidebar ul li a {
   color: lightblue;
 }
 
+/*
+.sidebar .upcoming-games .football .match {
+  background-color: #002A5C; */ /* Seahawks Blue */ /*
+}
+*/
+
 /* 6) Main Content Theme */
 main article {
   background: #444;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main h2 {
+  font-size: 1.8rem;
+  font-style: italic;
+  border-top: 2px solid #002144;
+  border-bottom: 2px solid #002144;
+  background: linear-gradient(90deg, #002144 0%, #A5ACAF 100%);
+}
+
+main h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 4px solid #ffffff; /* Default white, overridden per sport */
+}
+
+/* Team-Specific Borders for h3 */
+.news .football h3,
+.highlights .football h3 { border-bottom-color: #002A5C; } /* Seahawks Blue */
+
+main p {
+  font-size: 1rem;
+  color: #dddddd;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border effect */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+}
+
+main a{
+  text-decoration: none;
+  color: #69BE28; /* Action green highlight on hover/active */
+  font-weight: bold;
+}
+
+main a:hover,
+main a:active {
+  color: #A5ACAF; /* green for all links */
+  text-decoration: underline;
+
 }
 
 /* 7) Footer Colors */
 footer {
-  background: #1a1a1a;
+  background: #002A5C;
 }

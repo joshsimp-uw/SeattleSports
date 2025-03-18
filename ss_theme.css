@@ -53,6 +53,7 @@ nav ul li:hover {
 /* 5) Sidebar Theme */
 .sidebar {
   background-color: #222; /* Sidebar background */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .sidebar h2 {
   border-bottom: 2px solid white;
@@ -109,6 +110,7 @@ nav ul li:hover {
 /* 6) Main Content Theme */
 main article {
   background: #444;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main h2 {

@@ -73,6 +73,10 @@ nav ul li {
   border-radius: 8px;
 }
 
+.sidebar h3 {
+  padding: 5px;
+}
+
 /* Remove bullets from all lists */
 .sidebar ul {
   list-style: none;
